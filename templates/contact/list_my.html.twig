@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {% trans %}My Contacts{% endtrans %}
+{% endblock %}
+
+{% block body %}
+    {% include 'contact/parts/table.html.twig' with {'is_favorite_list': true} %}
+{% endblock %}

@@ -1,0 +1,23 @@
+'Log in!': Войти
+'You are logged in as %app.user.username%': 'Вы авторизованы как %app.user.username%'
+Logout: Выход
+Email: E-mail
+Password: Пароль
+'Remember me': Запомнить
+'Sign in': Вход
+'Sign Up': Регистрация
+Имя: Имя
+Телефон: Телефон
+E-mail: E-mail
+Адрес: Адрес
+Remove: Удалить
+Save: Сохранить
+'There is nothing here yet': 'Здесь пока ничего нет'
+'My Contacts': 'Мои контакты'
+'Shared contacts': Контакты
+Contacts: Контакты
+'Contact list': 'Список контактов'
+'Repeat Password': 'Подтверждение пароля'
+'Please sign in': 'Пожалуйста авторизуйтесь'
+'Contact added successfully': 'Контакт успешно сохранён'
+'Contact remove successfully': 'Контакт успешно удалён'

@@ -1,0 +1,43 @@
+<div class="container contact-list">
+   {% if contacts is not empty %}
+        <table class="table table-bordered">
+            <tr>
+                <th>
+                    {% trans %}Имя{% endtrans %}
+                </th>
+                <th>
+                    {% trans %}Телефон{% endtrans %}
+                </th>
+                <th>
+                    {% trans %}E-mail{% endtrans %}
+                </th>
+                <th>
+                    {% trans %}Адрес{% endtrans %}
+                </th>
+            </tr>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.phone }}</td>
+                    <td>{{ contact.email }}</td>
+                    <td>{{ contact.address }}</td>
+                    <td>
+                        {% if is_favorite_list is defined or contact.is_favorite %}
+                            <a href="{{ path('contact_remove_to_user', {'id': contact.id}) }}">
+                                {% trans %}Remove{% endtrans %}
+                            </a>
+                        {% else %}
+                            <a href="{{ path('contact_add_to_user', {'id': contact.id}) }}">
+                                {% trans %}Save{% endtrans %}
+                            </a>
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <h2 class="mt-5 text-center">
+            {% trans %}There is nothing here yet{% endtrans %}
+        </h2>
+    {% endif %}
+</div>
